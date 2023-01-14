@@ -1,0 +1,153 @@
+@import 'utilities.css';
+:root{
+--primary: rgb(29, 221, 189);
+--bgDark: rgb(12, 12, 12);
+--white: rgb(250, 250, 250);
+--secondary: rgb(0, 59, 50);
+--bgLight: rgb(190, 181, 181);
+}
+* {
+    padding: 0;
+    margin: 0em;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background-color: var(--bgDark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+header nav .left a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+header nav .left a:hover {
+    color: var(--primary);
+}
+header nav {
+    padding: 2rem 0;
+}
+header nav .logo {
+    margin-right: 3rem;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.hero {
+    background-color: var(--bgDark);
+
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+.hero .left img {
+    width: 400px;
+    margin-right: 5em;
+    border-radius: 50%;
+}
+.hero .right {
+    color: var(--white);
+    margin-top: -7rem;
+}
+.hero .right h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span {
+    color: var(--primary);
+}
+.hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem; 
+}
+
+section{
+    padding: 6rem;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+}
+section.about h4 span{
+    color: var(--primary);
+}
+section.about h4{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+section.about h5 span{
+    color: var(--primary);
+}
+section.about h5{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.link-color {
+    color: black;
+    line-height: 3em;
+    font-size: 20px;
+}
+#contact {
+    margin-top: 6.5em;
+    margin-bottom: 10em;
+
+}
+#projects {
+    margin-top: 6.5em;
+    margin-bottom: 10em; 
+}
+@media screen and (max-width: 700px) {
+    .align{
+        flex-direction: column;
+    }
+    .hero .left img {
+        width: 175px;
+        margin-right: 5em;
+        border-radius: 50%;
+    }
+    .hero .right h1 {
+        font-size: 1.2rem;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+    .section.about p {
+        width: 10%;
+    }
+    .left .flex-1 .justify-right img {
+        display: none;
+    }
+}
