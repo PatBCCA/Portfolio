@@ -64,7 +64,7 @@ body{
     margin-bottom: 0.5rem;
 }
 .hero .right h1 {
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: 100;
     line-height: 1.2;
     margin-bottom: 2rem;
@@ -79,10 +79,12 @@ body{
 
 section{
     padding: 6rem;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 section.about h1{
     margin-bottom: 1rem;
-    font-size: 1.6rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 section.about h1 span{
@@ -97,7 +99,7 @@ section.about p{
     font-family: 'Lato', sans-serif;
     color: var(--secondary);
     line-height: 1.9rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
 }
 section.about h4 span{
     color: var(--primary);
@@ -112,23 +114,78 @@ section.about h5 span{
 }
 section.about h5{
     margin-bottom: 1rem;
-    font-size: 1.6rem;
+    font-size: 4rem;
     font-weight: 600;
+    justify-content: center;
+    /* display: flex; */
 }
 .link-color {
-    color: black;
+    color: var(--white);
     line-height: 3em;
     font-size: 20px;
 }
 #contact {
-    margin-top: 6.5em;
-    margin-bottom: 10em;
+    background-color: var(--bgDark);
+    margin-top: 0em;
+    margin-bottom: 0em;
 
 }
 #projects {
     margin-top: 6.5em;
-    margin-bottom: 10em; 
+    margin-bottom: 15em; 
+    text-align: center;
 }
+.project_style {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.project_style span {
+    color: var(--primary);
+}
+.thumb {
+    max-width: 20em;
+    border-radius: 20px;
+    transition-property: all;
+}
+.thumb:hover {
+    transition: .5s ease-in-out 0s;
+    max-width: 25em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.684);
+}
+.aboutimg {
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+}
+#projects_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+
+#skills {
+    margin-top: 6.5em;
+    margin-bottom: 0em; 
+    text-align: center;
+}
+.skill_icon {
+    max-width: auto;
+    max-height: 12em;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.row1 {
+    margin-top: 5em;
+}
+p.click_image{
+    color: darkcyan;
+}
+
+
 @media screen and (max-width: 700px) {
     .align{
         flex-direction: column;
