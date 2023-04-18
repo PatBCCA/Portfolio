@@ -190,7 +190,7 @@ p.click_image{
     .align{
         flex-direction: column;
     }
-    .hero .left img {
+    /* .hero .left img {
         width: 175px;
         margin-right: 5em;
         border-radius: 50%;
@@ -206,5 +206,8 @@ p.click_image{
     }
     .left .flex-1 .justify-right img {
         display: none;
+    } */
+    .body {
+        font-size: 16px;
     }
 }
