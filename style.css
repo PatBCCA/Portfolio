@@ -190,7 +190,10 @@ p.click_image{
     .align{
         flex-direction: column;
     }
-    /* .hero .left img {
+    #projects_container {
+        flex-direction: column;
+    }
+    .hero .left img {
         width: 175px;
         margin-right: 5em;
         border-radius: 50%;
@@ -206,8 +209,21 @@ p.click_image{
     }
     .left .flex-1 .justify-right img {
         display: none;
-    } */
-    .body {
-        font-size: 16px;
+    }
+    .aboutimg {
+        height: 200px;
+        width: auto;
+        border-radius: 20px;
+    }
+    #aboutMobile {
+        display: flex;
+        flex-direction: column;
+    }
+    #me {
+        text-align: center;
+    }
+    #mySkills {
+        display: flex;
+        flex-direction: row;
     }
 }
